@@ -8,6 +8,24 @@ importers:
 
   .:
     dependencies:
+      '@radix-ui/react-icons':
+        specifier: ^1.3.0
+        version: 1.3.0(react@18.3.1)
+      '@radix-ui/react-slot':
+        specifier: ^1.1.0
+        version: 1.1.0(@types/react@18.3.5)(react@18.3.1)
+      '@tauri-apps/api':
+        specifier: 2.0.0-rc.4
+        version: 2.0.0-rc.4
+      class-variance-authority:
+        specifier: ^0.7.0
+        version: 0.7.0
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      lucide-react:
+        specifier: ^0.439.0
+        version: 0.439.0(react@18.3.1)
       next:
         specifier: 14.2.8
         version: 14.2.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -17,7 +35,16 @@ importers:
       react-dom:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
+      tailwind-merge:
+        specifier: ^2.5.2
+        version: 2.5.2
+      tailwindcss-animate:
+        specifier: ^1.0.7
+        version: 1.0.7(tailwindcss@3.4.10)
     devDependencies:
+      '@tauri-apps/cli':
+        specifier: 2.0.0-rc.12
+        version: 2.0.0-rc.12
       '@types/node':
         specifier: ^20
         version: 20.16.5
@@ -186,6 +213,29 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
+  '@radix-ui/react-compose-refs@1.1.0':
+    resolution: {integrity: sha512-b4inOtiaOnYf9KWyO3jAeeCG6FeyfY6ldiEPanbUjWd+xIk5wZeHa8yVwmrJ2vderhu/BQvzCrJI0lHd+wIiqw==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-icons@1.3.0':
+    resolution: {integrity: sha512-jQxj/0LKgp+j9BiTXz3O3sgs26RNet2iLWmsPyRz2SIcR4q/4SbazXfnYwbAr+vLYKSfc7qxzyGQA1HLlYiuNw==}
+    peerDependencies:
+      react: ^16.x || ^17.x || ^18.x
+
+  '@radix-ui/react-slot@1.1.0':
+    resolution: {integrity: sha512-FUCf5XMfmW4dtYl69pdS4DbxKy8nj4M7SafBgPllysxmdachynNflAdp/gCsnYWNDnge6tI9onzMp5ARYc1KNw==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
 
@@ -197,6 +247,78 @@ packages:
 
   '@swc/helpers@0.5.5':
     resolution: {integrity: sha512-KGYxvIOXcceOAbEk4bi/dVLEK9z8sZ0uBB3Il5b1rhfClSpcX0yfRO0KmTkqR2cnQDymwLB+25ZyMzICg/cm/A==}
+
+  '@tauri-apps/api@2.0.0-rc.4':
+    resolution: {integrity: sha512-UNiIhhKG08j4ooss2oEEVexffmWkgkYlC2M3GcX3VPtNsqFgVNL8Mcw/4Y7rO9M9S+ffAMnLOF5ypzyuyb8tyg==}
+
+  '@tauri-apps/cli-darwin-arm64@2.0.0-rc.12':
+    resolution: {integrity: sha512-zYxcAH4reyqKkqCAybggszFWkBvC+ZyZPTWFKXXVQ20MZc1q+e/0UJYC8UKsaumrbi1uptgamvnM8yql56x5QQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@tauri-apps/cli-darwin-x64@2.0.0-rc.12':
+    resolution: {integrity: sha512-eme7pQzEzeGCk13V3uxUNRnkVZJukqwHotqEb2RdovXqJWSyESrighBy4PBG5Xn6wNYTOyoquY9+In4TOfJAzw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@tauri-apps/cli-linux-arm-gnueabihf@2.0.0-rc.12':
+    resolution: {integrity: sha512-113T2NsLeoy6GXsqc0yjMoozt+KXzkAtUB7DL9Kcvx9IMfA87cUVaTNjnb2GFsoQqpCWGfHei3nr9n1PGEbwMg==}
+    engines: {node: '>= 10'}
+    cpu: [arm]
+    os: [linux]
+
+  '@tauri-apps/cli-linux-arm64-gnu@2.0.0-rc.12':
+    resolution: {integrity: sha512-9TrUyNg0vmsYF7IbG+/sybEeiz6ikA1Kjd6JjC4iwfXjRff8fuTR7CIOb06imabxbLzGP79qSAnGAeTXz8E7qA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@tauri-apps/cli-linux-arm64-musl@2.0.0-rc.12':
+    resolution: {integrity: sha512-YvE40+wdkNcXhwUAJNPyhNzJ8YS3saJoxGj7mtNQeNeNrKhxyj6hA5T6gw9KtMkwBOp+HGtqn+eDXiu0X7BBHQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@tauri-apps/cli-linux-x64-gnu@2.0.0-rc.12':
+    resolution: {integrity: sha512-q+MJp/lSA5WINs78dCFMlU0/jQeUkGr9GHbKeppcVcpkcY/1vog70b4KhneyvbuklKBn/V8kd0FtIKCn8VP+KQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@tauri-apps/cli-linux-x64-musl@2.0.0-rc.12':
+    resolution: {integrity: sha512-5zodtleH2GFsB9lszDYrzPTLcr+MMqtpQpJWHATC1K03bLEA8ia8zSdBqRwm7u8NraMLl8TE7hc7hwq0uxGEcg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@tauri-apps/cli-win32-arm64-msvc@2.0.0-rc.12':
+    resolution: {integrity: sha512-nSu6VHpuq61DYM2YowLDLDwkK8im7dzYxIHXs+h8/rhkmadTujGhbyUhHPI1STA6hNyITUtSFpo6P2mEbfpAIg==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@tauri-apps/cli-win32-ia32-msvc@2.0.0-rc.12':
+    resolution: {integrity: sha512-d/4y57OisMuB+MUkTpZsryQRi9ZQXQ8SsMhrvEgu8sbX8/WRm0iZyGuIZ01RlZZHLIasXbKTkPX+hPQC5Juk8Q==}
+    engines: {node: '>= 10'}
+    cpu: [ia32]
+    os: [win32]
+
+  '@tauri-apps/cli-win32-x64-msvc@2.0.0-rc.12':
+    resolution: {integrity: sha512-RsPUvsbFza03ysh0nU2nM3P2CVWz9cu7CRHwOEdtXjWWNREHUYCaVpqQKz0tn2sG19yXiNIB40iqrIBUmb/IoA==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+
+  '@tauri-apps/cli@2.0.0-rc.12':
+    resolution: {integrity: sha512-rNcVSyGHGz8vNk542isYKPk5fEMAsgmzER+1s9YYbGZCH7m4e0rH89p/P9W40I/Z4AZk4ZqjpEeajeS5izDI4g==}
+    engines: {node: '>= 10'}
+    hasBin: true
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
@@ -420,8 +542,19 @@ packages:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
 
+  class-variance-authority@0.7.0:
+    resolution: {integrity: sha512-jFI8IQw4hczaL4ALINxqLEXQbWcNjoSkloa4IaufXCJr6QawJyw7tuRysRsrE8w2p/4gGaxKIt/hX3qz/IbD1A==}
+
   client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
+
+  clsx@2.0.0:
+    resolution: {integrity: sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==}
+    engines: {node: '>=6'}
+
+  clsx@2.1.1:
+    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
+    engines: {node: '>=6'}
 
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -1033,6 +1166,11 @@ packages:
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
+  lucide-react@0.439.0:
+    resolution: {integrity: sha512-PafSWvDTpxdtNEndS2HIHxcNAbd54OaqSYJO90/b63rab2HWYqDbH194j0i82ZFdWOAcf0AHinRykXRRK2PJbw==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
+
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
@@ -1443,6 +1581,14 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
+  tailwind-merge@2.5.2:
+    resolution: {integrity: sha512-kjEBm+pvD+6eAwzJL2Bi+02/9LFLal1Gs61+QB7HvTfQQ0aXwC5LGT8PEt1gS0CWKktKe6ysPTAy3cBC5MeiIg==}
+
+  tailwindcss-animate@1.0.7:
+    resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders'
+
   tailwindcss@3.4.10:
     resolution: {integrity: sha512-KWZkVPm7yJRhdu4SRSl9d4AK2wM3a50UsvgHZO7xY77NQr2V+fIrEuoDGQcbvswWvFGbS2f6e+jC/6WJm1Dl0w==}
     engines: {node: '>=14.0.0'}
@@ -1681,6 +1827,23 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
+  '@radix-ui/react-compose-refs@1.1.0(@types/react@18.3.5)(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+    optionalDependencies:
+      '@types/react': 18.3.5
+
+  '@radix-ui/react-icons@1.3.0(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+
+  '@radix-ui/react-slot@1.1.0(@types/react@18.3.5)(react@18.3.1)':
+    dependencies:
+      '@radix-ui/react-compose-refs': 1.1.0(@types/react@18.3.5)(react@18.3.1)
+      react: 18.3.1
+    optionalDependencies:
+      '@types/react': 18.3.5
+
   '@rtsao/scc@1.1.0': {}
 
   '@rushstack/eslint-patch@1.10.4': {}
@@ -1691,6 +1854,51 @@ snapshots:
     dependencies:
       '@swc/counter': 0.1.3
       tslib: 2.7.0
+
+  '@tauri-apps/api@2.0.0-rc.4': {}
+
+  '@tauri-apps/cli-darwin-arm64@2.0.0-rc.12':
+    optional: true
+
+  '@tauri-apps/cli-darwin-x64@2.0.0-rc.12':
+    optional: true
+
+  '@tauri-apps/cli-linux-arm-gnueabihf@2.0.0-rc.12':
+    optional: true
+
+  '@tauri-apps/cli-linux-arm64-gnu@2.0.0-rc.12':
+    optional: true
+
+  '@tauri-apps/cli-linux-arm64-musl@2.0.0-rc.12':
+    optional: true
+
+  '@tauri-apps/cli-linux-x64-gnu@2.0.0-rc.12':
+    optional: true
+
+  '@tauri-apps/cli-linux-x64-musl@2.0.0-rc.12':
+    optional: true
+
+  '@tauri-apps/cli-win32-arm64-msvc@2.0.0-rc.12':
+    optional: true
+
+  '@tauri-apps/cli-win32-ia32-msvc@2.0.0-rc.12':
+    optional: true
+
+  '@tauri-apps/cli-win32-x64-msvc@2.0.0-rc.12':
+    optional: true
+
+  '@tauri-apps/cli@2.0.0-rc.12':
+    optionalDependencies:
+      '@tauri-apps/cli-darwin-arm64': 2.0.0-rc.12
+      '@tauri-apps/cli-darwin-x64': 2.0.0-rc.12
+      '@tauri-apps/cli-linux-arm-gnueabihf': 2.0.0-rc.12
+      '@tauri-apps/cli-linux-arm64-gnu': 2.0.0-rc.12
+      '@tauri-apps/cli-linux-arm64-musl': 2.0.0-rc.12
+      '@tauri-apps/cli-linux-x64-gnu': 2.0.0-rc.12
+      '@tauri-apps/cli-linux-x64-musl': 2.0.0-rc.12
+      '@tauri-apps/cli-win32-arm64-msvc': 2.0.0-rc.12
+      '@tauri-apps/cli-win32-ia32-msvc': 2.0.0-rc.12
+      '@tauri-apps/cli-win32-x64-msvc': 2.0.0-rc.12
 
   '@types/json-schema@7.0.15': {}
 
@@ -1968,7 +2176,15 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
+  class-variance-authority@0.7.0:
+    dependencies:
+      clsx: 2.0.0
+
   client-only@0.0.1: {}
+
+  clsx@2.0.0: {}
+
+  clsx@2.1.1: {}
 
   color-convert@2.0.1:
     dependencies:
@@ -2759,6 +2975,10 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
+  lucide-react@0.439.0(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+
   merge2@1.4.1: {}
 
   micromatch@4.0.8:
@@ -3186,6 +3406,12 @@ snapshots:
       has-flag: 4.0.0
 
   supports-preserve-symlinks-flag@1.0.0: {}
+
+  tailwind-merge@2.5.2: {}
+
+  tailwindcss-animate@1.0.7(tailwindcss@3.4.10):
+    dependencies:
+      tailwindcss: 3.4.10
 
   tailwindcss@3.4.10:
     dependencies:
